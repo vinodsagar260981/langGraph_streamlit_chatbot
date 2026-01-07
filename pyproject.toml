@@ -6,4 +6,8 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "streamlit>=1.52.2",
+    "langgraph",
+    "langchaim",
+    "python-dotenv",
+    "langchain-groq"
 ]
