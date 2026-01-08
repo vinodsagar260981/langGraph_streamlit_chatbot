@@ -1,0 +1,6 @@
+        for message_chunk, metadat in chatbot.stream(
+                        {'messages': [HumanMessage(content='What is the capital of India')]},
+                        config = {'configurable': {'thread_id': "thread_1"}},
+                        stream_mode='messages'):
+    if message_chunk.content: # type: ignore
+        print(message_chunk.content, end=" ", flush=True) # type: ignore
