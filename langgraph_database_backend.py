@@ -36,18 +36,6 @@ graph.add_edge('chat_bot', END)
 
 chatbot = graph.compile(checkpointer=checkpointer)
 
-# CONFIG = {"configurable": {"thread_id": "thread_2"}}
-
-# response = chatbot.invoke({'messages':[HumanMessage(content="Hi My name is sagar")]}, config=CONFIG) # type: ignore
-
-# print(response)
-
-# print(checkpointer.list(None))
-# all_thread=set()
-# for checkpoint in checkpointer.list(None):
-#     result = all_thread.add(checkpoint.config['configurable']['thread_id'])# type: ignore
-
-# print(list(all_thread))
 
 def thread_id_database():
     all_threads = set()
